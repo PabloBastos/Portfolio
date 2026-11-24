@@ -79,7 +79,7 @@ export const education = [
     when: '2024 – Em andamento',
     title: 'Engenharia da Computação',
     institution: 'UNIFACS',
-    text: 'Fundamentos da computação, algoritmos e programação, matemática computacional, redes de computadores e modelagem de software.',
+    text: 'Graduação que une a base teórica da computação à prática de desenvolver software. Estudo algoritmos e programação, matemática computacional, redes de computadores e modelagem de software, e aplico o que aprendo em projetos próprios, na formação Full Stack e em soluções reais.',
   },
   {
     when: '400 horas — Em andamento',

@@ -23,6 +23,7 @@ export default function App() {
       <footer className="footer">
         <div className="wrap footer-inner">
           <p>© {new Date().getFullYear()} {profile.name}</p>
+          <p className="footer-center">Code • Rock • Coffee</p>
           <a href="#inicio">Voltar ao topo</a>
         </div>
       </footer>
