@@ -82,10 +82,10 @@ export const education = [
     text: 'Graduação que une a base teórica da computação à prática de desenvolver software. Estudo algoritmos e programação, matemática computacional, redes de computadores e modelagem de software, e aplico o que aprendo em projetos próprios, na formação Full Stack e em soluções reais.',
   },
   {
-    when: '400 horas — Em andamento',
+    when: 'mar/2026 – nov/2026',
     title: 'Formação Full Stack',
-    institution: 'MaisPraTI',
-    text: 'Frontend com HTML, CSS, JavaScript e React. Backend com Java, POO, Spring Boot e APIs REST, com MySQL e PostgreSQL. Git, GitHub, Docker e CI/CD, além de IA com Python.',
+    institution: 'MaisPraTI · 400 horas',
+    text: 'Bootcamp concluído que cobriu o ciclo completo de uma aplicação web. No frontend, HTML, CSS, JavaScript e React. No backend, Java, POO, Spring Boot e APIs REST, com persistência em MySQL e PostgreSQL. Também trabalhei com Git, GitHub, Docker e CI/CD, além de IA com Python, e finalizei a formação com um projeto em equipe, o Conecte-bem.',
   },
 ]
 
