@@ -11,8 +11,11 @@ export const profile = {
   email: 'pablo.kaue.bastoss@gmail.com',
   phone: '+55 (75) 99827-5660',
   whatsapp: 'https://wa.me/5575998275660',
-  github: 'https://github.com/EngPabloBastos',
+  github: 'https://github.com/PabloBastos',
   linkedin: 'https://www.linkedin.com/in/bastospablo/',
+  instagram: 'https://www.instagram.com/pablobastos__/',
+  instagramHandle: '@Pablobastos__',
+  spotify: 'https://open.spotify.com/user/31lv6ypbor2j7zr4jmccn7lhxbgu?si=05d21a87d9634204',
 }
 
 export const nav = [
@@ -36,59 +39,38 @@ export const skills = [
   { group: 'Ferramentas', items: ['Git', 'GitHub', 'Docker', 'n8n'] },
 ]
 
-// Case em destaque (apresentação própria, ver Projects.jsx)
-export const almabot = {
-  title: 'Almabot',
-  kicker: 'Inteligência Artificial e automação',
-  badge: 'Case profissional · Alma Tecnologia',
-  note: 'Implementado em produção. Projeto privado, sem repositório público.',
-  context:
-    'Etapas do atendimento por WhatsApp, como a triagem, o agendamento e o registro de informações no CRM, dependiam de atividades manuais.',
-  solution: [
-    'O Almabot é um chatbot desenvolvido para automatizar etapas do atendimento por WhatsApp, utilizando Inteligência Artificial generativa e integração entre diferentes ferramentas e serviços.',
-    'A solução realiza a triagem de atendimentos, auxilia no agendamento e coleta informações para registro no CRM, reduzindo atividades manuais e otimizando processos internos.',
-  ],
-  tags: ['N8N', 'Google Gemini', 'Evolution API', 'Redis', 'WhatsApp', 'Integração com CRM'],
-  flow: ['WhatsApp', 'Evolution API', 'N8N', 'Google Gemini', 'Fluxos de automação', 'CRM'],
-  impacts: [
-    'Automatização da triagem de atendimentos.',
-    'Auxílio no agendamento.',
-    'Coleta e registro de informações no CRM.',
-    'Economia aproximada de R$ 500 mensais com ferramenta de CRM.',
-    'Solução implementada e utilizada em produção.',
-  ],
-}
-
+// Projetos. Todos usam o mesmo formato de card.
+// privacy: 'private' mostra "Projeto privado" + o tipo (kind) no lugar dos links.
+// links: github (repositório) e demo ("Ver projeto", só se já estiver em produção).
 export const projects = [
   {
-    title: 'Conecte-bem',
-    badge: { text: 'Projeto final +praTI', soft: true },
+    title: 'Almabot',
+    privacy: 'private',
+    kind: 'Projeto profissional',
     description:
-      'Plataforma que conecta organizações não governamentais a pessoas interessadas em trabalho voluntário.',
+      'Chatbot de atendimento por WhatsApp desenvolvido durante minha passagem pela Alma Tecnologia e utilizado em produção. Usa Inteligência Artificial generativa (Google Gemini) integrada ao N8N e à Evolution API para fazer a triagem dos atendimentos, auxiliar no agendamento e registrar as informações coletadas no CRM, reduzindo atividades manuais e gerando uma economia aproximada de R$ 500 mensais com ferramenta de CRM.',
+    tags: ['N8N', 'Google Gemini', 'Evolution API', 'Redis', 'WhatsApp', 'Integração com CRM'],
+  },
+  {
+    title: 'Conecte-bem',
+    description:
+      'Plataforma que conecta organizações não governamentais a pessoas interessadas em trabalho voluntário. As ONGs publicam oportunidades e acompanham as candidaturas; os voluntários encontram ações, se inscrevem e acompanham suas inscrições. Projeto final do bootcamp Full Stack da +praTI, desenvolvido em equipe.',
     tags: ['Java', 'Spring Boot', 'Spring Security', 'PostgreSQL'],
-    link: {
-      text: 'Ver no GitHub',
-      href: 'https://github.com/julianorafael-dev/conecte-bem',
-    },
+    github: 'https://github.com/julianorafael-dev/conecte-bem',
   },
   {
     title: 'Baba Manager',
     description:
-      'Aplicação web voltada à organização de partidas de futebol, estatísticas e classificação.',
+      'Aplicação web voltada à organização de partidas de futebol de uma associação amadora. Registra partidas, gols e assistências, monta o ranking geral, sorteia os times e organiza as rodadas, para que cada jogador consulte suas próprias estatísticas e a classificação.',
     tags: ['React'],
-    link: {
-      text: 'Ver no GitHub',
-      href: 'https://github.com/EngPabloBastos/O-Baba-Project',
-    },
+    github: 'https://github.com/EngPabloBastos/O-Baba-Project',
   },
   {
     title: 'GameHall',
-    description: 'Projeto web com temática gamer, desenvolvido com HTML, CSS e JavaScript.',
+    description:
+      'Site com temática gamer, construído apenas com HTML, CSS e JavaScript, sem frameworks, e publicado online.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    link: {
-      text: 'Ver projeto',
-      href: 'https://engpablobastos.github.io/GameHall/',
-    },
+    demo: 'https://engpablobastos.github.io/GameHall/',
   },
 ]
 
@@ -117,4 +99,12 @@ export const certificates = [
   { title: 'Ambientes Computacionais e Conectividade', issuer: 'UNIFACS', status: 'done' },
   { title: 'Inglês · Nível B2', issuer: 'EF SET', status: 'done' },
   { title: 'AWS Cloud Practitioner Essentials', issuer: 'AWS Skill Builder', status: 'ongoing' },
+]
+
+// Linhas da seção de contato (ordem de exibição)
+export const contactLinks = [
+  { label: 'LinkedIn', desc: 'Trajetória e conexões profissionais', href: profile.linkedin },
+  { label: 'GitHub', desc: 'Código, projetos e experimentos', href: profile.github },
+  { label: 'Instagram', desc: profile.instagramHandle, href: profile.instagram },
+  { label: 'Spotify', desc: 'O que ando ouvindo', href: profile.spotify },
 ]

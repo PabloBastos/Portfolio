@@ -1,9 +1,4 @@
-import { profile } from '../data'
-
-const links = [
-  { n: '01', label: 'GitHub', desc: 'Código, projetos e experimentos', href: profile.github },
-  { n: '02', label: 'LinkedIn', desc: 'Trajetória e conexões profissionais', href: profile.linkedin },
-]
+import { profile, contactLinks } from '../data'
 
 export default function Contact() {
   return (
@@ -22,10 +17,10 @@ export default function Contact() {
         </div>
 
         <ul className="link-rows">
-          {links.map((l) => (
+          {contactLinks.map((l, i) => (
             <li key={l.label}>
               <a href={l.href} target="_blank" rel="noopener noreferrer">
-                <span className="row-n">{l.n}</span>
+                <span className="row-n">{String(i + 1).padStart(2, '0')}</span>
                 <span className="row-label">{l.label}</span>
                 <span className="row-desc">{l.desc}</span>
                 <span className="row-arrow" aria-hidden="true">↗</span>

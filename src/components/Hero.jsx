@@ -17,9 +17,8 @@ export default function Hero() {
           <p className="tagline">{profile.tagline}</p>
           <p className="lead">{profile.lead}</p>
           <div className="actions">
-            <a className="btn" href="#projetos">Ver projetos</a>
-            <a className="btn btn-ghost" href={profile.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a className="btn btn-ghost" href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a className="btn" href="#projetos">Meus projetos</a>
+            <a className="btn btn-ghost" href="#contato">Contato</a>
           </div>
         </div>
 
